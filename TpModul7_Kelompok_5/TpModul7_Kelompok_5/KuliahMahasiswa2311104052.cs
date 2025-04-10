@@ -19,13 +19,13 @@ namespace TpModul7_Kelompok_5
         public Course[] courses { get; set; }
     }
 
-    public class KuliahMahasiswa2311104079
+    public class KuliahMahasiswa2311104052
     {
         public static void ReadJSON()
         {
             try
             {
-                string filePath = "tp7_2_2311104079.json";
+                string filePath = "tp7_2_2311104052.json";
 
                 if (!File.Exists(filePath))
                 {
