@@ -1,0 +1,17 @@
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+#IDE Conf
+.vs/
+.idea/
+#Build Rslt
+obj/
+#Conf fls/usrdt
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+#Log/Tmp fls
+*.log
+*.tmp
+*.temp
