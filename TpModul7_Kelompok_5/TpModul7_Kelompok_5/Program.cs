@@ -1,31 +1,12 @@
-﻿using System;
-using System.IO;
-using System.Text.Json;
-using TpModul7_Kelompok_5;
-
-namespace TpModul7_Kelompok_5
+﻿class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("=== PROGRAM DESERIALISASI JSON ===");
-            Console.WriteLine("=== Praktikum Modul 7 - NIM 2311104079 ===\n");
+        DataMahasiswa2311104072 dataMahasiswa2311104072 = new DataMahasiswa2311104072();
+        var data = dataMahasiswa2311104072.ReadJSON("tp7_1_2311104072.json");
 
-            // Jalankan fungsi pertama (Data Mahasiswa)
-            Console.WriteLine("\n===============MENAMBAHKAN JSON DESERIALIZATON 1==================");
-            Console.WriteLine("\n[1] MEMBACA DATA MAHASISWA");
-            DataMahasiswa2311104079.ReadJSON();
-            
-
-            // Jalankan fungsi kedua (Daftar Mata Kuliah)
-            Console.WriteLine("\n==================MENAMBAHKAN JSON DESERIALIZATON 2=====================");
-            Console.WriteLine("\n[2] MEMBACA DAFTAR MATA KULIAH");
-            KuliahMahasiswa2311104079.ReadJSON();
-
-            Console.WriteLine("\n=== SEMUA PROSES TELAH SELESAI ===");
-            Console.WriteLine("Tekan sembarang tombol untuk keluar...");
-            Console.ReadKey();
-        }
+        Console.WriteLine($"Nama {data.nama.depan} {data.nama.belakang} " +
+                          $"dengan nim {data.nim} " +
+                          $"dari fakultas {data.fakultas}");
     }
 }
