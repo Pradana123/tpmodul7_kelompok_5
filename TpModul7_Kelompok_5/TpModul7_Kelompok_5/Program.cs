@@ -6,7 +6,7 @@ namespace TPModul7
     {
         static void Main(string[] args)
         {
-            DataMahasiswa2311104056.ReadJSON();
+            KuliahMahasiswa2311104056.ReadJSON();
         }
     }
 }
